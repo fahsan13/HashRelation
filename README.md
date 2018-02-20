@@ -4,11 +4,11 @@ Implementing a Relation [abstract data type](https://en.wikipedia.org/wiki/Abstr
 
 ### About
 
-A Relation is essentially a generalization of a [Map](https://en.wikipedia.org/wiki/Associative_array). Whereas a Map demands that each key is unique, a Relation allows for duplicate keys with different values and instead tests that a given key/value pair is unique. It's similar to a [MultiMap](https://en.wikipedia.org/wiki/Multimap) but only allows for a single instances of a key/value pair.
+A Relation is essentially a generalization of a [Map](https://en.wikipedia.org/wiki/Associative_array). Whereas a Map demands that each key is unique, a Relation allows for duplicate keys with different values and instead tests that a given key/value pair is unique. It's similar to a [MultiMap](https://en.wikipedia.org/wiki/Multimap) but only allows for a single instance of a given key/value pair.
 
 This repo contains an interface, `Relation.java`, which declares the methods that characterise a Relation.  This interface acts as a contract for implementing classes and uses [generic typing](https://en.wikipedia.org/wiki/Generic_programming).
 
-`HashRelation.java` is the class implementing `Relation.java` with a Hash Table. It relies on an private static inner class, `Node`, to generate buckets.
+`HashRelation.java` is the class implementing `Relation.java` with a Hash Table. It relies on a private static inner class, `Node`, to generate buckets.
 
 ### To-do
 
